@@ -11,4 +11,4 @@ scipy
 h5py
 einops
 timm
-yacs
+PyYAML
