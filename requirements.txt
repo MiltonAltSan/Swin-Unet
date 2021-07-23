@@ -11,4 +11,5 @@ scipy
 h5py
 einops
 timm
-PyYAML
+PyYAML==5.1
+yacs
