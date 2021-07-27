@@ -17,14 +17,14 @@ parser.add_argument('--dataset', type=str,
 parser.add_argument('--list_dir', type=str,
                     default='./lists/lists_Synapse', help='list dir')
 parser.add_argument('--num_classes', type=int,
-                    default=9, help='output channel of network')
+                    default=5, help='output channel of network')
 parser.add_argument('--output_dir', type=str, help='output dir')                   
 parser.add_argument('--max_iterations', type=int,
                     default=30000, help='maximum epoch number to train')
 parser.add_argument('--max_epochs', type=int,
                     default=150, help='maximum epoch number to train')
 parser.add_argument('--batch_size', type=int,
-                    default=24, help='batch_size per gpu')
+                    default=2, help='batch_size per gpu')
 parser.add_argument('--n_gpu', type=int, default=1, help='total gpu')
 parser.add_argument('--deterministic', type=int,  default=1,
                     help='whether use deterministic training')
@@ -80,7 +80,7 @@ if __name__ == "__main__":
         'Synapse': {
             'root_path': args.root_path,
             'list_dir': './lists/lists_Synapse',
-            'num_classes': 9,
+            'num_classes': 5,
         },
     }
 
